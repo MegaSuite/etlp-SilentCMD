@@ -1,4 +1,15 @@
-# etlp - embyToLocalPlayer
+
+
+# etlp-SilentCMD
+
+参考：
+
+- https://github.com/kjtsune/embyToLocalPlayer/issues/14#issuecomment-1794428722
+- [stbrenner/SilentCMD: SilentCMD](https://github.com/stbrenner/SilentCMD)
+
+---
+
+## etlp - embyToLocalPlayer
 
 etlp - Emby/Jellyfin 调用 PotPlayer mpv IINA MPC VLC 播放，并回传播放进度（可关）。适配 Plex。
 
@@ -311,7 +322,7 @@ https://github.com/kjtsune/embyToLocalPlayer#faq
     `                    script-binding console/enable                # 进入控制台（此时Esc退出）
     DEL                  script-binding osc/visibility                # 切换 内置OSC的可见性
     r                    cycle_values video-rotate 90 180 270 0       # 旋转屏幕方向
-     ```
+    ```
 
 </details>
 
@@ -441,7 +452,7 @@ https://github.com/kjtsune/embyToLocalPlayer#faq
     
     # 服务端路径包含以下前缀才预读取，逗号隔开，全部启用就留空或删除。
     prefetch_path = /disk/od/TV, /disk/gd
-
+    
     # 启用本功能的域名的关键词，逗号隔开。全部启用就留空或删除。
     prefetch_host = 
     ```
@@ -499,22 +510,22 @@ https://github.com/kjtsune/embyToLocalPlayer#faq
     ### v v # # # # # # # # 追更 TG 通知 # # # # # # # # # # # v v ###
     
     [tg_notify]
-  
+    
     # 找 @BotFather 创建一个机器人。复制并填写 token。
     bot_token = 
-  
+    
     # 点击你创建的机器人，然后点击开始或随便发送信息给你的机器人，最后启动本脚本。机器人会告诉你 chat_id。
     chat_id = 
-  
+    
     # chat_id 填写后，重启脚本，会自动测试，提示测试成功的话，本项可以关闭。 
     get_chat_id = yes
-  
+    
     # 如果不需要预读取服务，仅通知。就启用本项。
     disable_prefetch = no
-  
+    
     # 静音通知时间段，范围间逗号隔开。例如：0-9 0点后9点前。类似针式时钟的时间范围。
     silence_time = 0-9, 12-14
-  
+    
     # [可选] 可指定 api, 自行搜索 "TG Bot API 反代", 解决网络连接问题。
     base_url = https://api.telegram.org
     ```
